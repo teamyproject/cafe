@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-x: clip !important;
+    position: relative;
+}
+#page{
+    background-image: url('./nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 300vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/* RightGrid */
+#rightgrid{
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.5);
+    max-width: 240px;
+    min-height: 222vh;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 22.5%;
+}
+#profilepic {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(235, 235, 235, 0.4);
+    border-color: black;
+    border-radius: 100%;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+#profilepic i{
+    color: rgb(0, 0, 0);
+}
+#profilepic i:hover{
+    color: rgb(167, 35, 35);
+    transition: color 0.2s, box-shadow 0.3s;
+}
+#userinfo{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: none;
+    margin: auto;
+    background-color: rgb(34, 34, 34);
+    color: rgb(163, 163, 163);
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.3s;
+    border-radius: 100px;
+}
+button:hover{
+    margin: auto;
+    background-color: rgb(167, 35, 35);
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:active{
+    margin: auto;
+    background-color: rgb(109, 109, 109);
+    color: rgb(167, 35, 35);
+    height: 30px;
+    font-weight: bold;
+}
+#btnedit{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 2%;
+    box-sizing: content-box;
+    height: 50px;
+}
+#btnsign{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 2%;    
+    box-sizing: content-box;
+    height: 50px;
+}
+/* RightGrid */
+/* LeftGrid */
+#leftgrid{
+    width: 90%;
+    min-height: 600px;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255,0.5);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: relative;
+    margin-left: auto;
+}
+p{  
+    font-size: 22px;
+    font-weight: bold;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 25px 0;
+    background-color: rgb(241, 241, 241,0.7);
+    border: none;
+    border-radius: 5px; 
+    box-sizing: content-box;
+}
+#userinput1{
+    margin-top: 10%;
+    margin-right: 65%;
+    position: absolute;
+}
+#userinput2{
+    margin-top: 10%;
+    margin-left: 45%;
+    position: absolute;
+}
+#btn1{
+    min-height: 50px;
+    box-sizing: content-box;
+    margin-left: 62%;
+    margin-top: 37% ;
+    position: absolute;
+}
+/* LeftGrid */
+#bottomgrid{
+    margin-top: 128.5%;
+    width: 100%;
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255,0.5);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: absolute;
+}
+#bottomgrid h1:hover{
+    color: rgb(167, 35, 35);
+    transition: color 0.2s, box-shadow 0.3s;
+    cursor: default;
+}
+h3,p{
+    cursor: default
+}
+#navbar{
+    background-color: rgb(1, 1, 1,0.5);
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 138%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    opacity: 0.9;
+}
+#links{
+    margin-left: 22%;
+    justify-content: space-between;
+}
+#links a{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(229, 228, 228);
+}
+#links a:hover{
+    color: rgb(167, 35, 35);
+    transition: color 0.2s, box-shadow 0.3s;
+}
+#navbar i{
+    margin-left: 180%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(235, 235, 235, 0.6);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+#navbar i:hover{
+    color: rgb(167, 35, 35);
+    transition: color 0.2s, box-shadow 0.3s;
+}
+#search p{
+    margin-right: 80%;
+}
+#search input{
+    position: absolute;
+    width: 200px;
+    margin-bottom: 20%;
+    margin-left: 6%;
+}
+

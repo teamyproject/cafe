@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" id="main_myaccount">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/JS/MyAccount.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="navbar">
+            <p id="restaurant"><i class="fa-solid fa-utensils"></i></p>
+            <div id="links">
+                <a href="/index.html">Home</a>
+                <a href="/HTML/menu.html">Menu</a>
+                <a href="/HTML/menu.html">Rooms</a>
+                <a href="/HTML/rate.html">Rate Us</a>
+                <a href="/HTML/ContactPage.html">Contact Us</a>
+            </div>
+            <span id="search">
+                <input type="search" id="searchbar" placeholder="Search...">
+                <p id="searchicon"><i class="fa-solid fa-magnifying-glass"></i></p>
+            </span>
+        </div>
+        <div id="leftgrid">
+            <div id="userinput1" class="searchable">
+                <p>NAME : </p>
+                <input type="text" id="name" placeholder="Full Name" size="30" disabled required>
+                <p>AGE : </p>
+                <input type="number" id="age" placeholder="Age" min="1" size="30" disabled required>
+            </div>  
+            <div id="userinput2" class="searchable">
+                <p>EMAIL : </p>
+                <input type="email" id="email" placeholder="Email Address" size="30" disabled required>
+                <p>ADDRESS : </p>
+                <input type="text" id="address" placeholder="Address" size="30" disabled required>
+            </div>
+            <button id="btn1" onclick="submit()">Submit</button>          
+        </div>
+        <div id="rightgrid">
+            <h3>My Account</h3>
+            <div id="profilepic">
+                <h2><i class="fa-solid fa-user"></i></h2>
+            </div>
+            <div id="userinfo">
+                <h3 id="name1" class="searchable">Name : N/A</h3>
+                <h3 id="age1" class="searchable">Age : N/A</h3>
+                <h3 id="address1" class="searchable">Address : N/A</h3>
+                <h3>Number of Orders : 0</h3>
+                <h3>Last Order : N/A</h3>
+                <button id="btnedit" onclick="editbtn()">Edit</button>
+                <button id="btnsign" onclick="signbtn()">Sign In</button>
+            </div>
+        </div>
+        <div id="bottomgrid">
+            <h1>Contact Us :-</h1>
+            <iframe src="/mohamed/Contact/ContactPage.html" height="380px" width="100%"></iframe>
+        </div>
+    </div>
+</body>
+</html>

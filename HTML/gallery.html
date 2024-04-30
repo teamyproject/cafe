@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" id="main_gallery">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/all.css"> -->
+    <link rel="stylesheet" href="/main.css">
+    <title>Gallery</title>
+    <script src="../js/gallery.js" defer></script>
+</head>
+<body>
+         <div class="nav">
+            <div class="logo">
+                <img src="/MEDIA/media_login&home/logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="choose">
+                <ul id="galleryUL">
+                    <li><a class="active" href="../index.html">Home</a></li>
+                    <li><a href="/HTML/menu.html">Menu</a></li>
+                    <li><a href="/HTML/About.html">About</a></li>
+                    <li><a href="/HTML/services.html">Services</a></li>
+                    <li><a href="/HTML/Room.html">Rooms</a></li>
+                    <li><a href="/HTML/ContactPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <form action="" class="search-bar">
+                <div class="search">
+                    <input id="search-input" type="search" placeholder="Search for names..." onkeyup="myFunction()">
+                </div>
+            </form>
+        </div>
+        <div class="screen">
+          <div class="daytime">
+            <div class="daytime-items">
+              <div class="daytime-item">
+                <img src="/MEDIA/media_login&home/breckfastIcon.png" alt="Breakfast">
+                <h3>Breakfast</h3>
+                <p>8:00 am to 10:00 am</p>
+              </div>
+              <div class="daytime-item">
+                <img src="/MEDIA/media_login&home/lunchIcon.png" alt="Lunch">
+                <h3>Lunch</h3>
+                <p>4:00 pm to 7:00 pm</p>
+              </div>
+              <div class="daytime-item">
+                      <img src="/MEDIA/media_login&home/dinnerIcon.png" alt="Dinner">
+                      <h3>Breakfast</h3>
+                      <p>9:00 pm to 1:00 am</p>
+                    </div>
+                    <div class="daytime-item">
+                      <img src="/MEDIA/media_login&home/dessertIcon.png" alt="Dessert">
+                      <h3>Dessert</h3>
+                      <p>All day</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+              <div class="container">
+                    <h2>Our Food Gallery</h2>
+                    <div class="img-gallery">
+                        <img src="/MEDIA/media_login&home/galleryitialy.jpg" alt="Gallery 1">
+                        <img src="/MEDIA/media_login&home/gallerypastajpg.jpg" alt="Gallery 2">
+                        <img src="/MEDIA/media_login&home/gallery pizzajpg.jpg" alt="Gallery 3">
+                        <img src="/MEDIA/media_login&home/gallerypiiza2.jpg" alt="Gallery 4">
+                        <img src="/MEDIA/media_login&home/gallerypastajpg.jpg" alt="Gallery 5">
+                        <img src="/MEDIA/media_login&home/gallerycake.jpeg" alt="Gallery 6">
+                        <img src="/MEDIA/media_login&home/gallerydissert.jpg" alt="Gallery 7">
+                        <img src="/MEDIA/media_login&home/gallerydessert8.jpg" alt="Gallery 8">
+                      </div>
+                
+                    <div class="media">
+                      <video src="/MEDIA/media_login&home/istockphoto-606042756-640_adpp_is.mp4" autoplay controls loop muted ></video>
+                    <audio class="sound" src="/MEDIA/media_login&home/WhatsApp-Video-2024-04-28-at-4.37.40-PM.mp3" autoplay loop controls></audio>
+                  </div>
+                  <div class="table">
+                    <table id="table" style="display: none;">
+                            <thead>
+                              <tr>
+                                <th>Days</th>
+                                <th> Active Hours</th>
+                                <th> dessert</th>
+                                <th> Offers</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Saturday</td>
+                                <td>From 8am to 1pm</td>
+                                <td>Cakes's</td>
+                                <td>10%</td>
+                              </tr>
+                              <tr>
+                                <td>Sunday</td>
+                                <td>From 8am to 1pm</td>
+                                <td>tiramisu</td>
+                                <td>15%</td>
+                              </tr>
+                              <tr>
+                                <td>Monday</td>
+                                <td>From 8am to 1pm</td>
+                                <td>gelato</td>
+                                <td>15%</td>
+                              </tr>
+                              <tr>
+                              <td>Tuesday</td>
+                              <td>From 8am to 1pm</td>
+                              <td>zeppole</td>
+                              <td>15%</td>
+                            </tr>
+                            <tr>
+                              <td>Wednesday</td>
+                              <td>From 8am to 2pm</td>
+                              <td>sfogliatelle</td>
+                              <td>30%</td>
+                            </tr>
+                            <tr>
+                              <td>Thursday</td>
+                              <td>From 8am to 2pm</td>
+                              <td>biscotti</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Friday</td>
+                              <td>From 8am to 2pm</td>
+                              <td>cannoli</td>
+                              <td>50%</td>
+                            </tr>
+                          </tbody>
+                  </table>
+                  </div>
+                <div  id="text">
+                  <p>🇮🇹 Indulge in Authentic Italian Delights! 🍝🍕🍰
+                    <br>
+                    🍝 Pasta Perfection: From classic Spaghetti Carbonara to rich and creamy Fettuccine Alfredo, our pasta dishes are a true taste of Italy's finest. <br>
+                    
+                    🍕 Pizza Passion: Savor the crispy crust and melty cheese of our wood-fired pizzas. Whether you're a fan of Margherita simplicity or adventurous toppings, we have a slice for every palate.
+                    <br>
+                    
+                    🍰 Decadent Desserts: Round off your meal with a touch of sweetness! Indulge in Tiramisu, Cannoli, or our homemade Gelato – each bite a heavenly delight.
+                    <br>
+                    <br>
+                    <span> Enter the button to show a Details of the week ... </span></p>
+                    <button class="btn" onclick="showDetails()">Show Details</button>
+                  </div>
+                  <button class="btn-hidden" onclick="hidden1()">Hide the table</button> 
+                </div>             
+                </div>
+                <!-- Footer -->
+                <div class="footer" id="footer">
+                <div class="footer-box">
+                    <h2>About</h2>
+                    <p>is the first specialized Steakhouse in Cairo since 2014. <br>  With our first branch in Maadi, we have decided to get closer to the pulsing energy of Cairo</p>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+            
+                <div class="footer-box">
+                    <h2>Categories</h2>
+                    <a href="#">Fruits & Vegetables</a>
+                    <a href="#">Dairy Products</a>
+                    <a href="#">Packaged Food</a>
+                    <a href="#">Beverage</a>
+                </div>
+            
+                <div class="footer-box">
+                    <h2>Contact</h2>
+                    <a href="#"><i class='bx bx-phone-call'></i>+101-222-333</a>
+                    <a href="#"><i class='bx bx-phone-call'></i>+208-125-481</a>
+                    <a href="#"><i class='bx bx-envelope'></i> restaurantitalino@gmail.com</a>
+                    <a href="#"><i class='bx bx-map'></i>17 Road 231 Maadi Degla</a>
+                </div>
+            </div>
+            </div>
+              </div>
+    </body>
+</html>

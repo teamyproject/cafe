@@ -1,0 +1,457 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f4f4f4;
+    
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #e4b95b81;
+}
+.header2{
+    width: 100%;
+    height: 70px;
+    background-color: #e5989ba8;
+
+}
+.head-logo{
+    width: 250px;
+    height: 80px;
+    float: left;
+    margin-left: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: #383848;
+}
+.list{
+    list-style-type: none;
+    float: right;
+    margin: 25px;
+    
+}
+.list li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+.list li a:hover{
+    color: forestgreen;
+    
+}
+
+.menu{
+    
+    padding: 100px 0;
+    
+}
+.menu-title{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.title{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #383848;
+}
+.menu-items{
+    display: flex;
+    justify-content: flex-start;
+    /* align-content: center; */
+}
+
+
+.menu-img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.primary-text{
+    color: #e4b95b;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.name-meal{
+    width: 400px;
+    color: #383848;
+    border-bottom: 1px dashed #383848;
+    padding-bottom: 10px;
+}
+.menu-item{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin: 40px;
+    position: relative;
+}
+.name-meal:hover{
+    color:#9d9d9d;
+    cursor:default;
+}
+
+.review{
+   
+  padding: 100px 17%; 
+  
+
+   
+    
+  
+    
+}
+.reTitle{
+    text-align: center;
+    font-size: 35px;
+    color: #383848;
+    
+
+    
+}
+.feedback{
+    
+    position: relative;
+    
+margin: 0;
+   
+}
+.form-feedback{
+    margin: 50px 200px;
+    text-align: center;
+}
+.label-feedback2{
+    margin-top: 100px;
+}
+.inp1{
+    margin-left: 10px;
+}
+.inp2{
+    margin-left: 10px;
+}
+.label-feedback3{
+    /* display: flex; */
+    padding-top: 30px;
+}
+.feedback-area{
+    margin-top: 20px;
+}
+
+.submit{
+    margin-top:15px;
+
+}
+
+.btn1{
+    width: 100px;
+    height: 60px;
+    font-size: 18px;
+    
+}
+.btn1:hover{
+    background-color: red;
+}
+
+.feedback-img{
+
+    margin-left: 50px;
+    
+    
+    
+}
+.menu-drinks{
+    padding: 50px 0px;
+    text-align: center;
+    /* position: relative; */
+}
+.menu-drink-title{
+    padding: 25px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: 6d6875;
+
+}
+.menu-row1{
+    display: inline-block;
+    padding: 0px 30px;
+    width: 400px;
+    
+    vertical-align: middle;
+
+}
+.menu-row2{
+    
+    display: flex;
+    padding-left: 850px;
+    width: 400px;
+    position: absolute;
+    
+
+}
+.menu-col1{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #e5989b7c;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+   
+}
+.menu-col2{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #e5989b7c;
+    margin: 10px;
+    padding: 10px;
+    flex: 2;
+   
+    
+   
+}
+.feedback-form{
+    border: solid 1px;
+    padding-top: 20px;
+}
+.catag-title{
+    background-color: #b5838da3;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+    color: 6d6875;
+}
+.drink-item-img1{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid orange;
+    margin-top: 30px;
+
+}
+.drink-item-img2{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid red;
+    margin-top: 30px;
+
+}
+.drink-item-img3{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #df530d;
+    margin-top: 30px;
+
+}
+.drink-item-img4{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #e0e007cb;
+    margin-top: 30px;
+
+}
+.drink-item-img5{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #070e5c;
+    margin-top: 30px;
+
+}
+.drink-item-img11{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #da4b03;
+    margin-top: 30px;
+
+}
+.drink-item-img22{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid rgb(16, 154, 16);;
+    margin-top: 30px;
+
+}
+.drink-item-img33{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid orange;
+    margin-top: 30px;
+
+}
+.drink-item-img44{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #ba5a07cb;
+    margin-top: 30px;
+
+}
+.drink-item-img55{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 12px;
+    border: 2px solid #793b04cb;
+    margin-top: 30px;
+
+}
+
+.drink-item-img1:hover{
+    background-color: #e4b95b;
+}
+.drink-item-img2:hover{
+    background-color: red;
+}
+
+.drink-item-img3:hover{
+    background-color: #df530d;
+}
+.drink-item-img4:hover{
+    background-color: #e0e007cb;
+}
+.drink-item-img5:hover{
+    background-color: #070e5c;
+}
+.drink-item-img11:hover{
+    background-color: #da4b03;
+}
+.drink-item-img22:hover{
+    background-color: rgb(16, 154, 16);
+}
+
+.drink-item-img33:hover{
+    background-color: orange;
+}
+.drink-item-img44:hover{
+    background-color: #ba5a07cb;
+}
+.drink-item-img55:hover{
+    background-color: #793b04cb;
+}
+
+
+
+
+.drink-img{
+    
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+  
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.drink-item-name{
+    color: #6d6875;
+}
+
+#myTable{
+    
+    width: 300px;
+    
+    text-align: center;
+    
+
+
+}
+
+.tr{
+    height: 100px;
+    width: 20px;
+    color: #4c4852;
+}
+.tt{
+    font-weight: bold;
+}
+td{
+    width: 100px;
+}
+
+
+
+
+.bottom{
+    padding: 50px 0px;
+    text-align: center;
+    position: relative;
+}
+.vid{
+    display: inline-block;
+    padding: 0px 30px;
+    width: 400px;
+    
+    vertical-align: middle;
+}
+.table-div{
+    display: inline-block;
+    padding: 0px 30px;
+    width: 400px;
+    
+    vertical-align: middle;
+    margin-top: 10px;
+    
+}
+
+
+.cap{
+    font-size: 20px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+width: 300px;
+margin-left: 300px;
+margin-top: 10px;
+}
+#myInput {
+    border: solid 1px;
+    box-shadow: 2px 2px 2px #bbb;
+
+    background-color: #e5989b7c;
+    color: #4c4852;
+    width: 300px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    
+    margin-left: 30px;
+    position: absolute;
+    top: 0;
+  }

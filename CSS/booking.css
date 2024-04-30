@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Quicksand",sans-serif;
+    display: grid; 
+
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: relative;
+    display: grid;
+    background: url(./img/offers_background.jpg) center center/cover no-repeat;
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.6);
+}
+
+header *{
+    z-index: 1;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a{
+    padding: 15px 20px;
+    color:#fff;
+    font-weight: 600;
+    font-size: 25px;
+    color: #a15300;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:#e4b95b;
+    border-bottom:2px solid #e4b95b;
+    font-weight: 800;
+}
+
+#search{
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #a15300;
+    cursor: pointer;
+    
+}
+
+.searchbutton{
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right,red,orange,yellow);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.searchbutton:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+}
+
+.logo img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.p h2{
+    margin: 80px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+span{
+    color: #e4b95b;
+}
+
+.p h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 100px;
+
+}
+
+.p h4{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    background-color: rgb(0,0,0,0.6);
+    margin: auto;
+    height: auto;
+    width: 500px;
+}
+
+form h5{
+    color: #e4b95b;
+    margin: auto;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+form h6{
+    color:#e4b95b;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.name ,.number ,.email ,.password ,.message{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e7ddaa;
+
+}
+
+.place {
+    color: #fff;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #e7ddaa;
+
+}
+
+.places{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.submit{
+    margin: 25px;
+    padding: 25px 70px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: #fff;
+    background-color: #e4b95b;
+    transition: 0.3s;
+}
+
+.submit_div{
+    justify-content: space-between;
+    display: flex;
+}
+
+.audio{
+    color: aliceblue;
+    text-align: center;
+    margin: 25px;
+    font-size: 25px;
+}
+
+.audio_div{
+    align-items: center;
+    margin: auto;
+}
+
+.video{
+    margin: auto;
+    width: 1000px;
+    height:1000px ;
+}
+
+.video_p{
+    color:#000;
+    margin: auto;
+    margin-top: 90px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.video_div{
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border: #000000 3px solid;
+    margin-top:45px ;
+    background: rgba(255, 255, 255, 0.3);
+    height:117vh;
+}
+
+.iframe_div{
+    margin: 30px 15px;
+}
+
+.iframe_p{
+    font-size: 50px;
+    text-align: center;
+    color: #ffc800b6;
+    margin: 20px;
+}
+

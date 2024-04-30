@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    position: relative;
+    display: grid;
+}
+
+.daytime
+{
+    background: url(../img/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.daytime-items
+{
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.daytime-items h3
+{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+
+.daytime-items p
+{
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* gallery start */
+#gallery
+{
+    background: url(../img/offer-background.jpg) center center/cover no-repeat;
+    padding: 4rem 0 6rem;
+}
+#gallery .img-gallery
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#gallery .img-gallery img
+{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: .8;
+}
+
+#gallery .img-gallery img:hover
+{
+    opacity: 1;
+}
+
+#gallery .img-gallery
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery h2
+{
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 35px;
+}
+
+
+#gallery .media video
+{
+    width: 640px;
+    height: 360px;
+    margin-top: 15px;
+    margin-left: 50px;
+    border-radius: 6px;
+}
+
+#gallery .sound
+{
+    position: absolute;
+    top: 1335px;
+    right: 980px;
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/*------------------------------------ TabLe------------------------------ */
+
+#table
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 260px;
+    left: 900px;
+}
+
+#table thead tr
+{
+    background-color: #999999;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+}
+
+#table thead tr th
+{
+    border: 1.5px solid #000000;
+}
+
+#table thead th
+{
+    padding: 12px 15px;
+}
+
+#table tbody td
+{
+    padding: 12px 15px;
+    color: #d4a45c;
+    border: 1px solid #999999;
+}
+
+#table tbody tr
+{
+   border-bottom: 1px solid  #132020;
+}
+
+#table tbody tr:nth-of-type(even)
+{
+    background-color: #132020;
+}
+
+#table tbody tr:nth-of-type(odd)
+{
+    background-color: #132020;
+}
+
+/* #table tbody tr:last-of-type
+{
+    border-bottom: 3px solid white;
+} */
+
+/* end table */
+
+#gallery #text p
+{
+    height: 10%;
+    position: absolute;
+    bottom: 480px;
+    left: 750px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gallery #text p span
+{
+    color: #d4a45c;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#text .btn
+{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #d4a45c;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    left: 745px;
+    bottom: 350px;
+}
+
+#text .btn:hover
+{
+    background-color: #000000;
+    color: white;
+}
+
+.btn-hidden
+{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #d4a45c;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    left: 745px;
+    bottom: 310px;
+}
+
+.btn-hidden:hover
+{
+    background-color: #000000;
+    color: white;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+.footer {
+    width: 100%;
+    background-color: #2c333a;
+    padding: 20px;
+    color: #d3d9de;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #d3d9de;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+}
+
+.footer a:hover {
+    color: rgb(176, 88, 57);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social .bx {
+    padding: 10px;
+    background: var(--bg-color);
+    color: var(--green-color);
+    border-radius: 5rem;
+    font-size: 20px;
+}
+
+.social .bx:hover {
+    background: var(--green-color);
+    color: var(--bg-color);
+    transition: 0.2s ease, color 0.2s ease;
+}
+
+.footer-box h2
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.footer-box .social
+{
+    padding-top: 10px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.nav
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 232, 217);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 2px 20px rgb(250, 124, 124);
+}
+.nav .logo {
+    width: 4%;
+    height: 100%; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 100px;
+}
+
+img 
+{
+    width: 90px;
+}
+
+.nav .choose {
+    width: 45%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    margin-right: 500px;
+}
+
+.nav .choose ul {
+    width: 100%;
+    padding: 0px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav .choose ul li {
+
+    margin-left: 60px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.3);
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+ul .active::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+.nav .search
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    --padding: 0 14px;
+    border-radius: 20px;
+    background: #f6f6f6;
+}
+
+.nav #search-input
+{
+    position: absolute;
+    right: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+    margin-right: var(--padding);
+    border: none;
+    background: #CFCFCF;
+    border: 4px solid #0000;
+    border-radius: 30px;
+    width: 240px;
+    height: 35px;
+    padding: 20px 45px 20px 20px;
+}
+
+.nav #search-input::placeholder
+{
+    padding: 14px;
+    color: rgba(0, 0, 0, .5);
+}

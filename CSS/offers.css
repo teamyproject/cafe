@@ -1,0 +1,240 @@
+body{
+    font-family: "Quicksand",sans-serif;
+    display: grid;
+}
+
+header{
+    background: url(./img/Design.jpeg) center center/cover no-repeat;
+    position: relative;
+    display: grid;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.8);
+}
+
+header *{
+    z-index:  10;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a{
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #a15300;
+}
+
+#navbar ul li a:hover{
+    color:#e4b95b;
+    border-bottom:2px solid #e4b95b;
+    font-weight: 800;
+}
+
+.search{
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #a15300;
+    cursor: pointer;
+
+}
+
+.searchbutton{
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right,red,orange,yellow);
+    cursor: pointer;
+
+}
+
+.searchbutton:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+}
+
+
+.logo img{
+    height: 200px;
+    margin: 30px;
+}
+
+.p{
+    text-align: center;
+    margin: 50px;
+    height: 50vh;
+}
+
+.p h2{
+    font-size: 40px;
+    padding: 30px;
+    font: weight 700;
+    color: #fff;
+}
+
+.p h4{
+    font-size:25px ;
+    color: #fff;
+}
+
+.yellow {
+    color: #e4b95b;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.offers-items img{
+    height: 300px;
+    width: 300px;
+}
+
+.offers-items h3{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+
+}
+
+.dish{
+    margin: 50px;
+    padding: 25px;
+
+}
+
+.des{
+    color: #fff;
+    margin: 40px;
+    border: 10px;
+}
+
+.primary-text{
+    color: #e4b95b;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.btn{
+    padding: 20px 30px;
+    margin: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #e4b95b;
+    color: #000;
+}
+
+#table{
+    width: 900px;
+    margin:  auto;
+    margin-bottom: 50px;
+    border: #777777 solid 5px;
+    display: none;
+}
+
+table,td,tr{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+
+table *{
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+}
+
+th{
+    font-weight:bold;
+    border: #fff solid 5px;
+    background-color: #9909dc;
+    padding: 10px;
+    border-radius: 15px;
+    
+
+}
+
+td{
+    border: #fff solid 2px;
+    padding: 10px;
+    background-color: #777777;
+    border-radius: 15px;
+}
+
+.suaturday{background-color: #300246;}
+.sunday{ background-color: #3516d1;}
+.monday{ background-color: #02085b;}
+.tuesday{background-color: #280599;}
+.wednesday{background-color: #3e869a;}
+.thursday{background-color: #8800ff;}
+.all{background-color: #0084ff;}
+
+.suaturday:hover{background-color: #310246ad;}
+.sunday:hover{ background-color: #3516d1a3;}
+.monday:hover{ background-color: #02085ba5;}
+.tuesday:hover{background-color: #2805999a;}
+.wednesday:hover{background-color: #3e869a95;}
+.thursday:hover{background-color: #8800ff90;}
+.all:hover{background-color: #0084ff8e;}
+
+table th:hover{background: rgba(195, 0, 255, 0.5);}
+
+table td:hover{
+    background-color: #777777a5;
+}
+
+.button{
+    width: 400px;
+    height: 80px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #374602;
+    cursor: pointer;
+    margin-left:230px;
+    margin-bottom: 25px;
+}

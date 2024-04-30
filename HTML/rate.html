@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" id="main_rate">
+<head>
+    <script src="/JS/rate&sur.js"></script>
+    <title>Rate us</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/JS/rate&sur.js">
+    <link rel="icon" href= "images/rate-icon.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="navi-bar2">
+        <img src="/MEDIA/media_rate&survices/log.png" alt="" class="bar-logo">
+    
+    <ul class="list-bar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/HTML/offers.html">Offers</a></li>
+        <li><a href="/HTML/booking.html">Booking</a></li>
+        <li><a href="/HTML/gallery.html">Gallery</a></li>
+        <li><a href="/HTML/drinks.html">Drinks</a></li>
+        <li><a href="/HTML/About.html">About</a></li>
+        <li><a href="/HTML/services.html">Services</a></li>
+        <li><a href="/HTML/MyAccount.html">Account</a></li>
+        <li><a href="/HTML/Room.html">Room</a></li>
+        <li><a href="/HTML/menu.html">Menu</a></li>
+        <li><a href="/HTML/ContactPage.html">ContactUs</a></li>
+    </ul>
+
+</div> <!-- navi-bar -->
+
+
+
+
+
+   <div id="review">
+     <h1>rate us <span id="us">& </span>reviews</h1>
+    </div> <!-- review -->
+
+    <div class="video">
+        <h2 class="vid-title">video of our food:</h2>
+        
+        <iframe id="video"height="350"width="600" src="https://www.youtube.com/embed/xPPLbEFbCAo" title="Restaurant Ad Video Template (Editable)" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen poster="C:\Users\karol\OneDrive\الصور\food2.jpe"></iframe>
+    </div> <!-- video -->
+    <br>
+    <h2 class="form-title">please fill this form: </h2>
+    <br>
+    <div class="one">
+     <p id="para">RATE US</p>
+    <form method="post" target="blank" id="form" name="myForm">
+     <div id="first">
+        <label id="name1">first name:</label>
+        <input type="text" placeholder="first name" id="inp" name="firstname">
+       </div> <!-- first -->
+       <div id="second">
+        <label id="name2">second name:</label>
+        <input type="text" placeholder="second name" id="inp" name="secondname">
+       </div> <!-- second -->
+       <div id="contact">
+        <label id="num">contact NO:</label>
+        <input type="number" placeholder="contact NO." id="inp" name="phoneno">
+       </div> <!-- contact -->
+       <div id="rate">
+        <label id="rating">rate from 1 to 5:</label>
+        <input type="number" placeholder="rate" min="1"max="5" id="inp" name="rate">
+        <div class="submit">
+            
+            <button id="btn1" onclick='myfunc()' type="button" >Submit</button>
+            <p id="sub"></p>
+        </div>
+     </div> <!-- rate -->
+     </form>
+    </div> <!-- one -->
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h3 id="special">this is our special dishes:</h3>
+    <div class="oll">
+    <ol id="list" >
+        <li id="pasta">pasta</li><img id="food6" src="/MEDIA/media_rate&survices/food6.jpeg"width="120"height="120">
+        <li id="steak">steak</li><img id="food5" src="/MEDIA/media_rate&survices/food5.jpeg"width="120"height="120">
+        <li id="chicken">chicken wings</li><img id="food4" src="/MEDIA/media_rate&survices/food4.jpg"width="120"height="120">
+        <li id="shawarma">shawarma</li><img id="food3" src="/MEDIA/media_rate&survices/food3.jpg"width="120"height="120">   
+    </ol>
+</div> <!-- oll -->
+    <div class="two">
+        <label for="food" id="select-title">choose the best dish:</label>
+        <select name="food"id="food">
+            <option value="1" id="option1">pasta</option>
+            <option value="2"id="option2">steak</option>
+            <option value="3"id="option3">chicken wings</option>
+            <option value="4"id="option4">shawarma</option>
+        </select>    
+    </div> <!-- two -->
+    <h2 id="area-title">tell us your seggestion:</h2>
+    <div id="text-area">
+        
+          <textarea id="text-area-sugg" name="rate"cols="50"rows="10" placeholder="tell us your suggestion"></textarea>
+          <div id="button">
+            <button onclick="myfunction()" id="submit">sumbit rate</button>
+              </div> <!-- button -->
+        </div>
+          
+
+
+
+
+
+
+</body>
+</html>

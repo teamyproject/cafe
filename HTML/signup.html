@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" id="main_signup">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/main.css">
+    <title>SIGN UP</title>
+    <script src="/JS/signup.js" defer></script>
+</head>
+<body>
+    
+     <div class="signup">
+        <form id="form" action="#" onsubmit="return validateForm(event)">
+            <h1>SIGN UP</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input id="fullname" type="text" placeholder="Full Name" name="name" >
+                    <i class='bx bxs-user'></i>
+                </div>   
+                <div class="input-field">
+                    <input id="username" type="text" placeholder="Username" name="name" ><i class='bx bxs-user'></i>
+                </div>   
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input id="email" type="email" placeholder="Email" name="email" >
+                    <i class='bx bx-envelope'></i>
+                </div>   
+                <div class="input-field">
+                    <input id="phonenumber" type="number" placeholder="Phone Number" name="number" value="+20" >
+                    <i class='bx bx-phone-call'></i>
+                </div>  
+            </div> 
+                
+            <div class="input-box">
+                <div class="input-field">
+                    <input id="password" type="password" placeholder="Password" name="password" >
+                    <i class='bx bxs-lock-alt'></i>
+                </div>   
+                <div class="input-field">
+                    <input id="confirmpassword" type="password" placeholder="Confirm-Password" name="password" >
+                    <i class='bx bxs-lock-alt'></i>
+                </div>   
+            </div>
+
+            <label><input type="checkbox" class="checkbox">I hereby declare that the above information provided is true and correct</label>
+
+            <button type="submit" class="btn">SIGN UP</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" id="main_booking">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/JS/booking.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbar" class="logo">
+            <img  src="/MEDIA/media_booking&offers/logo (2).png" alt="Food Lover logo">
+            <nav style="display: flex;">
+                <input type="text" id="search" onkeyup="myFunction()" placeholder="Search for names..">
+                <ul id="myUL" style="margin: auto;">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/HTML/offers.html">Offers</a></li>
+                    <li><a href="/HTML/gallery.html">Gallery</a></li>
+                    <li><a href="/HTML/About.html">About</a></li>
+                    <li><a href="/HTML/menu.html">Menu</a></li>
+                    <li><a href="/HTML/MyAccount.html">MyAccount</a></li>
+                </ul>
+            </nav> 
+        </div>
+        <div class="p">
+            <h2><i>Welcome In <span>BOOKING</span> Page</i></h2>
+            <h3>Here You Can<span> BOOK </span>A Table</h3>
+            <h4>Please Fill The Form:</h4>
+        </div>
+        <div>
+            <form action="login.php" method="post" name="myform" onsubmit="return validateForm(),myfunc(event)">
+                <h5>your form</h5>
+                <input class="name" id="NAME" type="text" name="name" placeholder="enter your name" >
+                <input class="number" id="NUMBER" name="number" type="text" placeholder="enter your number">
+                <input class="email" id="EMAIL" type="email" name="email" placeholder="enter your email" > 
+                <input class="password" id="PASSWORD" type="password" name="password" placeholder="enter the password" >
+                <textarea class="message" name="message" placeholder="any notes?" cols="30" rows="5"></textarea> 
+                <h6>choose sitting place</h6>
+                <div class="places">
+                    <input type="radio" class="place" name="place" value="inside restaurant" >
+                    <lable class="place">inside restaurant</lable>
+                    <input type="radio" class="place" name="place" value="outside restaurant" >
+                    <lable class="place">outside restaurant</lable>
+                </div>
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+        <div class="audio_div">
+            <p class="audio">one of our <span>cooking</span> sounds</p>
+            <audio src="/MEDIA/media_booking&offers/cooking-oil-sizzle-1-171525.mp3" controls></audio>
+        </div>
+        <div class="video_div">
+            <p class="video_p">OUR <span>FOOD</span> TRAILER</p>
+            <video class="video" src="/MEDIA/media_booking&offers/video.mp4" loop controls autoplay></video>
+        </div>
+        <div class="iframe_div">
+            <p class="iframe_p">our booking page<i class="material-icons" style="color:#a15300; font-size: 60px;">arrow_downward</i></p>
+            <iframe class="iframe" src="./offers.html" width="100%" height="500px"></iframe>
+        </div>
+    </header>
+</body>
+</html>
