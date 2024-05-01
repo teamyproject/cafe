@@ -17,7 +17,7 @@ ul{
 header{
     position: relative;
     display: grid;
-    background: url(./img/offers_background.jpg) center center/cover no-repeat;
+    background: url(../media_booking&offers/offers_background.jpg) center center/cover no-repeat;
 }
 
 header::before{
@@ -65,21 +65,12 @@ header *{
     border: none;
     margin: 10px;
     border-radius: 25px;
-    background-color: #a15300;
+    background-color: #fff;
     cursor: pointer;
     
 }
 
-.searchbutton{
-    padding: 10px;
-    border: none;
-    margin: 10px;
-    background-image: linear-gradient(to bottom right,red,orange,yellow);
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.searchbutton:hover{
+#search:hover{
     background-image: linear-gradient(to bottom right,yellow,orange,red);
 }
 
