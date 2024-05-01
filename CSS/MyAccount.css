@@ -6,7 +6,7 @@ body {
     position: relative;
 }
 #page{
-    background-image: url('./nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
+    background-image: url('/media_contact&account/nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
