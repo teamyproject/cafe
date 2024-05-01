@@ -1,16 +1,18 @@
 function search() {
-    var input, filter, contactContent, contactInfo, i, txtValue;
-    input = document.getElementById('searchbar');
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchbar");
     filter = input.value.toUpperCase();
-    contactContent = document.getElementById("contact-content");
-    contactInfo = contactContent.getElementsByClassName("contact-info");
-
-    for (i = 0; i < contactInfo.length; i++) {
-        txtValue = contactInfo[i].textContent || contactInfo[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            contactInfo[i].style.display = "";
-        } else {
-            contactInfo[i].style.display = "none";
+    table = document.getElementById("partnersTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.backgroundColor = "rgb(167, 35, 35,0.3)"; //Match
+            } else {
+                tr[i].style.backgroundColor = ""; //No Match
+            }
         }
     }
 }
