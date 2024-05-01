@@ -58,17 +58,20 @@ function myFunction() {
     }
 }
 
+function storeFormData() {
+    const form = document.forms["myform"];
+    const name = form.elements["name"].value;
+    const number = form.elements["number"].value;
+    const email = form.elements["email"].value;
+    const password = form.elements["password"].value;
+    const message = form.elements["message"].value;
+    const place = form.elements["place"].value; // Get selected radio button value
 
-// function loadUserData() {
-//     // Check if user data exists in localStorage
-//     if (localStorage.getItem('userData')) {
-//         // Parse the stored JSON data
-//         const userData = JSON.parse(localStorage.getItem('userData'));
-//         // Update input fields with stored data
-//         document.getElementById('NAME').value = userData.NAME;
-//         document.getElementById('NUMBER').value = userData.NUMBER;
-//         document.getElementById('EMAIL').value = userData.EMAIL;
-//         document.getElementById('PASSWORD').value = userData.PASSWORD;
-//     }
-// }
+    const formData = {name,number,email,password,message,place};
 
+    const formDataString = JSON.stringify(formData);
+    localStorage.setItem("bookingFormData",formDataString);
+
+    console.log("Form data stored successfully!");
+}
+document.forms["myform"].addEventListener("submit", storeFormData);
