@@ -13,6 +13,9 @@ function loadUserData() {
         document.getElementById('age').value = userData.age;
         document.getElementById('email').value = userData.email;
         document.getElementById('address').value = userData.address;
+        document.getElementById("name1").textContent = "Name: "+userData.name;
+        document.getElementById("age1").textContent = "Age: "+userData.age +" Years Old";
+        document.getElementById("address1").textContent = "Address: "+userData.address;
     }
 }
 
