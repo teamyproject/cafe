@@ -85,7 +85,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.5);
 }
 
 #about * {
@@ -206,6 +206,7 @@ a {
   border: 2px #fff solid;
   color: #fff;
   position: relative;
+  border-collapse: collapse;
 }
 
 #thead1 th {
@@ -224,6 +225,7 @@ a {
   border: 2px #fff solid;
   color: #fff;
   margin: 100px 0px 50px 80px;
+  border-collapse: collapse;
 }
 
 #thead2 th {
@@ -354,7 +356,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.5);
 }
 
 .container6 h2 {
@@ -484,3 +486,6 @@ a {
   margin-top: 1.2em;
 }
 
+#search_123 i:hover {
+  cursor: pointer;
+}
