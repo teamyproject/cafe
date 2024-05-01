@@ -17,7 +17,7 @@ ul{
 header{
     position: relative;
     display: grid;
-    background: url(../media_booking&offers/offers_background.jpg) center center/cover no-repeat;
+    background: url(../media_booking&offers/offers_background.jpg) center center/cover fixed;
 }
 
 header::before{
