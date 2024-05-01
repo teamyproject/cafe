@@ -1,17 +1,32 @@
 function search() {
-    var input, filter, table, tr, td, i, txtValue;
+    var input, filter, container, navbar, elements, i, txtValue;
     input = document.getElementById("searchbar");
     filter = input.value.toUpperCase();
-    table = document.getElementById("partnersTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
+    
+    // Container Search
+    container = document.getElementById("container");
+    elements = container.getElementsByTagName("*");
+    for (i = 0; i < elements.length; i++) {
+        if (elements[i].textContent || elements[i].innerText) {
+            txtValue = elements[i].textContent || elements[i].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.backgroundColor = "rgb(167, 35, 35,0.3)"; //Match
+                elements[i].style.display = ""; // Match
             } else {
-                tr[i].style.backgroundColor = ""; //No Match
+                elements[i].style.display = "none"; // No Match
+            }
+        }
+    }
+
+    // Navbar Search
+    navbar = document.getElementById("navbar");
+    elements = navbar.getElementsByTagName("*");
+    for (i = 0; i < elements.length; i++) {
+        if (elements[i].textContent || elements[i].innerText) {
+            txtValue = elements[i].textContent || elements[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                elements[i].style.display = ""; // Match
+            } else {
+                elements[i].style.display = "none"; // No Match
             }
         }
     }
