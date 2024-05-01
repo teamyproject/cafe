@@ -5,7 +5,7 @@ body {
     overflow-x: clip !important;
 }
 #page{
-    background-image: url('cafe/media_contact&account/nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
+    background-image: url('/cafe/media_contact&account/nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
