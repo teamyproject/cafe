@@ -259,7 +259,7 @@ ul .active::after
 .footer
 {
     height: 21vh;
-    width: 100%;
+    width: 97.5%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
