@@ -148,7 +148,7 @@ ul .active::after
 .nav .myaccount
 {
     position: absolute;
-    left: 1300px; 
+    left: 1400px; 
     font-size: 18px;
     cursor: pointer;
 }
