@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     overflow-x: clip !important;
-    position: relative;
 }
 #page{
     background-image: url('../media_contact&account/nicolas-hoizey-yBNIf_ny6Ro-unsplash.jpg');
@@ -22,13 +21,13 @@ body {
     width: 100%;
     background-color: rgb(255, 255, 255,0.5);
     max-width: 240px;
-    min-height: 222vh;
+    min-height: 230.5vh;
     margin-right: auto;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     flex-direction: column; 
-    margin-bottom: 22.5%;
+    margin-bottom: 18%;
 }
 #profilepic {
     width: 50px;
@@ -165,12 +164,12 @@ h3,p{
     cursor: default
 }
 #navbar{
-    background-color: rgb(1, 1, 1,0.5);
+    background-color: rgb(1, 1, 1,0.7);
     position: absolute;
     bottom: 200px;
     width: 100%;
     height: 150px;
-    margin-bottom: 138%;
+    margin-bottom: 28.5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
@@ -178,13 +177,12 @@ h3,p{
     opacity: 0.9;
 }
 #links{
-    margin-left: 22%;
+    margin-left: 25%;
     justify-content: space-between;
 }
 #links a{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     font-weight: 600;
-    padding: 30px;
+    padding: 40px;
     text-decoration: none;
     color: rgb(229, 228, 228);
 }
